@@ -1,0 +1,7 @@
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\config\HealthCheck.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\config\RouteConfiguration.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\filter\AccountPreFilter.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\NidoGatewayApplication.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\filter\FirstPreLastPostGlobalFilter.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\filter\AccountPostFilter.java
+D:\EspacioDeTrabajo\Nido\Nido-Back-Module\nido-infrastructure\nido-infrastructure-gateway\src\main\java\com\nido\infrastructure\gateway\filter\LoggingGatewayFilterFactory.java

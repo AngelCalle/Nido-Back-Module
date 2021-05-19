@@ -1,0 +1,18 @@
+# Configura la ruta de los CrossOrigin permitidos.
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 
+              - 'http://localhost:4200'
+              - 'http://localhost:4333'
+            allowedHeaders: 
+              - Content-Type
+              - '*'
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE

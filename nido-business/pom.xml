@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<parent>
+		<groupId>com.nido</groupId>
+		<artifactId>nido-multi-module</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<!-- <relativePath>../pom.xml</relativePath> -->
+		<!-- <relativePath>../com.nido</relativePath> -->
+		<!-- <relativePath>com.nido</relativePath> -->
+		<!-- NON-RESOLVABLE PARENT POM FOR COM.NIDO:NIDO-COMMON:0.0.1-SNAPSHOT: 
+			COULD NOT FIND ARTIFACT COM.NIDO:NIDO-MULTI-MODULE:POM:0.0.1- -->
+
+	</parent>
+
+	<groupId>com.nido.business</groupId>
+	<artifactId>nido-business</artifactId>
+	<name>nido-business</name>
+
+	<packaging>pom</packaging>
+
+	<url>http://www.nido.com</url>
+	<description>Modulo de negocio del proyecto Nido</description>
+
+	<dependencies>
+	</dependencies>
+
+	<modules>
+		<module>nido-business-clients</module>
+		<module>nido-business-users</module>
+		<module>nido-business-mail</module>
+	</modules>
+
+</project>

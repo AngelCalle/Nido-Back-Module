@@ -1,0 +1,8 @@
+com\nido\infrastructure\gateway\filter\LoggingGatewayFilterFactory$Config.class
+com\nido\infrastructure\gateway\config\RouteConfiguration.class
+com\nido\infrastructure\gateway\filter\AccountPostFilter.class
+com\nido\infrastructure\gateway\NidoGatewayApplication.class
+com\nido\infrastructure\gateway\config\HealthCheck.class
+com\nido\infrastructure\gateway\filter\FirstPreLastPostGlobalFilter.class
+com\nido\infrastructure\gateway\filter\AccountPreFilter.class
+com\nido\infrastructure\gateway\filter\LoggingGatewayFilterFactory.class
