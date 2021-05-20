@@ -1,9 +1,0 @@
-com\nido\infrastructure\recaptcha\NidoRecaptchaApplication.class
-com\nido\infrastructure\recaptcha\dto\ReCaptchaServiceResponse.class
-com\nido\infrastructure\recaptcha\config\AppConfiguration.class
-com\nido\infrastructure\recaptcha\config\GoogleReCaptchaPropeties.class
-com\nido\infrastructure\recaptcha\config\EnableGoogleRecaptchaService.class
-com\nido\infrastructure\recaptcha\controller\ReCaptchaVerificationController.class
-com\nido\infrastructure\recaptcha\component\RiskAnalysisAlgo.class
-META-INF\spring-configuration-metadata.json
-com\nido\infrastructure\recaptcha\dto\SiteVerifyResponse.class
