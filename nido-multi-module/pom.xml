@@ -59,8 +59,9 @@
 		<module>../nido-infrastructure</module>
 		<module>../nido-business</module>
 	</modules>
-
+	
 	<properties>		
+	    <file>readme</file>
 	
 		<spring.boot.version>2.3.4.RELEASE</spring.boot.version>
 		<java.version>14</java.version>		
@@ -88,6 +89,14 @@
 
 	<dependencies>
 	
+			<!-- Lombok para minimizar significativamente el código repetitivo. -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+	
 <!-- 		<dependency> -->
 <!-- 			<groupId>org.springframework.boot</groupId> -->
 <!-- 			<artifactId>spring-boot-starter</artifactId>		 -->
@@ -105,11 +114,7 @@
 <!-- 			</exclusions>			 -->
 <!-- 		</dependency> -->
 	
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
+
 
 		<!-- Validada -->
 		<!-- Detecta los cambio de tal manera que no es necesario reiniciar para ver el resultado. -->

@@ -1,7 +1,7 @@
 package com.nido.infrastructure.oauth.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationEventPublisher;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -18,8 +18,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class AuthenticationSuccessErrorHandler implements AuthenticationEventPublisher {
 	
-	@Autowired
-	private Environment env;
+//	@Autowired
+//	private Environment env;
 	
 //	
 //	@Autowired

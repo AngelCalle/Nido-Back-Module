@@ -13,8 +13,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
-import javax.persistence.PreRemove;
-import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -25,12 +23,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-import org.hibernate.annotations.GenerationTime;
-import org.hibernate.annotations.Generated;
-import org.hibernate.annotations.Index;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import lombok.Data;
@@ -46,8 +38,6 @@ import lombok.experimental.Accessors;
 @Table(name = "user_in_role", uniqueConstraints = @UniqueConstraint(columnNames = {"user_id", "role_id"}, name = "uniq_user_role"))
 public class UserInRole implements Serializable {
 	
-	private static final Logger log = LoggerFactory.getLogger(UserInRole.class);
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator="USER_IN_ROLE_ID_GENERATOR")
 	//@SequenceGenerator(name="USER_IN_ROLE_ID_GENERATOR", sequenceName="USER_IN_ROLE_SEQ", allocationSize = 0)

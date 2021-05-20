@@ -303,28 +303,28 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	// UTIL
-	private ValidationErrorDTO processFieldErrors(final List<FieldError> fieldErrors) {
-		final ValidationErrorDTO dto = new ValidationErrorDTO();
-		log.error("UTIL");
-		for (final FieldError fieldError : fieldErrors) {
-			final String localizedErrorMessage = fieldError.getDefaultMessage();
-			dto.addFieldError(fieldError.getField(), localizedErrorMessage);
-		}
-		return dto;
-	}
+//	private ValidationErrorDTO processFieldErrors(final List<FieldError> fieldErrors) {
+//		final ValidationErrorDTO dto = new ValidationErrorDTO();
+//		log.error("UTIL");
+//		for (final FieldError fieldError : fieldErrors) {
+//			final String localizedErrorMessage = fieldError.getDefaultMessage();
+//			dto.addFieldError(fieldError.getField(), localizedErrorMessage);
+//		}
+//		return dto;
+//	}
 
-	private ResponseEntity<Object> message(final HttpStatus httpStatus, final Exception ex) {
-		log.info("\n\n ApiError messageApiError message");
-		final String message = ex.getMessage() == null ? ex.getClass().getSimpleName() : ex.getMessage();
-		final String devMessage = ex.getClass().getSimpleName();
-
-		List<String> details = new ArrayList<String>();
-		details.add(message);
-		details.add(devMessage);
-		ApiError err = new ApiError(LocalDateTime.now(), HttpStatus.BAD_REQUEST, "Invalid JSON", details);
-
-		return ResponseEntityBuilder.build(err);
-	}
+//	private ResponseEntity<Object> message(final HttpStatus httpStatus, final Exception ex) {
+//		log.info("\n\n ApiError messageApiError message");
+//		final String message = ex.getMessage() == null ? ex.getClass().getSimpleName() : ex.getMessage();
+//		final String devMessage = ex.getClass().getSimpleName();
+//
+//		List<String> details = new ArrayList<String>();
+//		details.add(message);
+//		details.add(devMessage);
+//		ApiError err = new ApiError(LocalDateTime.now(), HttpStatus.BAD_REQUEST, "Invalid JSON", details);
+//
+//		return ResponseEntityBuilder.build(err);
+//	}
 
     /*
     @ExceptionHandler(value = { ConstraintViolationException.class, DataIntegrityViolationException.class })

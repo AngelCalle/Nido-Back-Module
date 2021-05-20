@@ -334,34 +334,34 @@ public class UserNido implements Serializable {
 //	}
 
 	// Metodo para agregar un unico rol aun usuario
-	public void addRole(Role role) {		
-		if (this.roles.size() == 0) {
-			this.roles.add(role);
-		} else {			
-			for (Role roles : this.roles) {
-				if (roles.getId() != role.getId()) {
-					this.roles.add(role);
-					break;
-				}
-			}
-		}
-	}
+//	public void addRole(Role role) {		
+//		if (this.roles.size() == 0) {
+//			this.roles.add(role);
+//		} else {			
+//			for (Role roles : this.roles) {
+//				if (roles.getId() != role.getId()) {
+//					this.roles.add(role);
+//					break;
+//				}
+//			}
+//		}
+//	}
 
 	// Metodo para eliminar un rol a un asuario.
 	// Para poder eliminar un rol, el remove en una lista/ArrayList
 	// va a buscar el rol dentro de la lista y va a preguntar si es igual
 	// si es asi lo elimina, para eso el la entity Role se tiene
 	// que implementar/sobre escribir el metodo equals.
-	public void removeRole(Role role) {
-		if (this.roles.size() >= 1) {
-			for (Role roles : this.roles) {
-				if (roles.getId() == role.getId()) {
-					this.roles.remove(role);
-					break;
-				}
-			}
-		}
-	}
+//	public void removeRole(Role role) {
+//		if (this.roles.size() >= 1) {
+//			for (Role roles : this.roles) {
+//				if (roles.getId() == role.getId()) {
+//					this.roles.remove(role);
+//					break;
+//				}
+//			}
+//		}
+//	}
 
 	
 	public static long getSerialversionuid() {

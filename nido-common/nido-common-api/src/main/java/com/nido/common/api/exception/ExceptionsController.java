@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.nido.common.api.web.ApiError;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @ControllerAdvice
 public class ExceptionsController {
 

@@ -9,12 +9,15 @@
 		<groupId>com.nido.infrastructure</groupId>
 		<artifactId>nido-infrastructure</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath />
 	</parent>
-	
+
 	<groupId>com.nido.infrastructure.admin</groupId>
 	<artifactId>nido-infrastructure-admin</artifactId>
+
 	<name>nido-infrastructure-admin</name>
-	
+	<packaging>jar</packaging>
+
 	<description>SVC Encargado de monitorizar el resto de SVC</description>
 
 	<properties>
@@ -22,11 +25,11 @@
 	</properties>
 
 	<dependencies>
-	
+
 		<!-- Havilita las metricas del svc -->
 		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-actuator</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<!-- Interfaz que termite per las estadisticas -->

@@ -9,14 +9,15 @@
 		<groupId>com.nido.common</groupId>
 		<artifactId>nido-common</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../</relativePath>
+		<relativePath />
 	</parent>
-	
 
 	<groupId>com.nido.common.users</groupId>
 	<artifactId>nido-common-users</artifactId>
+
 	<name>nido-common-users</name>
-	
+	<packaging>jar</packaging>
+
 	<description>Clase gloval de usuarios</description>
 
 	<properties>
@@ -36,8 +37,6 @@
 
 	</dependencies>
 
-
-
 	<build>
 
 		<plugins>
@@ -47,18 +46,19 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>8</source>
-					<target>8</target>
-					<testSource>8</testSource>
-					<testTarget>8</testTarget>
-					<showDeprecation>true</showDeprecation>
-					<compilerArgument>-Xlint:unchecked</compilerArgument>
-				</configuration>
-			</plugin>
+			<!-- CONFIGURACION Descomentar estas lineas cuando el equipo tiene java 1.8 instalado -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-compiler-plugin</artifactId> -->
+<!-- 				<configuration> -->
+<!-- 					<source>8</source> -->
+<!-- 					<target>8</target> -->
+<!-- 					<testSource>8</testSource> -->
+<!-- 					<testTarget>8</testTarget> -->
+<!-- 					<showDeprecation>true</showDeprecation> -->
+<!-- 					<compilerArgument>-Xlint:unchecked</compilerArgument> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

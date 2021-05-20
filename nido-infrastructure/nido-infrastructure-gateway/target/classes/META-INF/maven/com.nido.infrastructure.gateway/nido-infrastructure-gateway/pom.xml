@@ -9,17 +9,20 @@
 		<groupId>com.nido.infrastructure</groupId>
 		<artifactId>nido-infrastructure</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath />
 	</parent>
 
 	<groupId>com.nido.infrastructure.gateway</groupId>
 	<artifactId>nido-infrastructure-gateway</artifactId>
+
 	<name>nido-infrastructure-gateway</name>
+	<packaging>jar</packaging>
 
 	<description>Servidor de puerta de enlace, acceso centralizadon</description>
 
 	<properties>
 	</properties>
-	
+
 	<dependencies>
 
 		<dependency>

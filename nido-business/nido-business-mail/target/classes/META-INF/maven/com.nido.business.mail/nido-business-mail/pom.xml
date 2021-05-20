@@ -9,10 +9,12 @@
 		<groupId>com.nido.business</groupId>
 		<artifactId>nido-business</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath />
 	</parent>
-	
+
 	<groupId>com.nido.business.mail</groupId>
 	<artifactId>nido-business-mail</artifactId>
+
 	<name>nido-business-mail</name>
 	<packaging>jar</packaging>
 
@@ -22,16 +24,13 @@
 	</properties>
 
 	<dependencies>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		
-	<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
-		</dependency> 
+		</dependency>
+
 	</dependencies>
 
 </project>

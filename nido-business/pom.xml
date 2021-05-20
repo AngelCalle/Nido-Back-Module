@@ -5,34 +5,91 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-
 	<parent>
 		<groupId>com.nido</groupId>
 		<artifactId>nido-multi-module</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<!-- <relativePath>../pom.xml</relativePath> -->
-		<!-- <relativePath>../com.nido</relativePath> -->
-		<!-- <relativePath>com.nido</relativePath> -->
-		<!-- NON-RESOLVABLE PARENT POM FOR COM.NIDO:NIDO-COMMON:0.0.1-SNAPSHOT: 
-			COULD NOT FIND ARTIFACT COM.NIDO:NIDO-MULTI-MODULE:POM:0.0.1- -->
-
+		<relativePath />
 	</parent>
 
 	<groupId>com.nido.business</groupId>
 	<artifactId>nido-business</artifactId>
-	<name>nido-business</name>
 
+	<name>nido-business</name>
 	<packaging>pom</packaging>
 
 	<description>Modulo de negocio del proyecto Nido</description>
-
-	<dependencies>
-	</dependencies>
 
 	<modules>
 		<module>nido-business-clients</module>
 		<module>nido-business-users</module>
 		<module>nido-business-mail</module>
 	</modules>
+
+	<dependencies>
+
+		<!-- Havilita las metricas del svc -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!-- Validacion de datos -->
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!-- Mapstruct para significativamente el código en los mapper. -->
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>1.4.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-json</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+<!-- 	CONFIGUTACION Al correr el servicio muestra un error en consola que puede ser ignorado -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-devtools</artifactId> -->
+<!-- 			<scope>runtime</scope> -->
+<!-- 		</dependency> -->
+
+	</dependencies>
 
 </project>

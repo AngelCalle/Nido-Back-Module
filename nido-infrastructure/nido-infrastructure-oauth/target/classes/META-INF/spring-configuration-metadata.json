@@ -26,7 +26,6 @@
     {
       "name": "security.jwt.key-store",
       "type": "org.springframework.core.io.Resource",
-      "description": "A description for 'security.jwt.key-store'",
       "sourceType": "com.nido.infrastructure.oauth.props.SecurityProperties$JwtProperties"
     },
     {

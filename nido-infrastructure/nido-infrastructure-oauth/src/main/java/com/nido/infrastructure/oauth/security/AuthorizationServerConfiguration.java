@@ -1,8 +1,6 @@
 package com.nido.infrastructure.oauth.security;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +15,7 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
-import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
+//import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
@@ -27,7 +25,6 @@ import com.nido.infrastructure.oauth.props.SecurityProperties;
 
 import javax.sql.DataSource;
 import java.security.KeyPair;
-import java.util.Arrays;
 
 @Configuration
 @EnableAuthorizationServer
@@ -40,8 +37,8 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     private final SecurityProperties securityProperties;
     private final UserDetailsService userDetailsService;
 
-	@Autowired
-	private InfoAdicionalToken infoAdicionalToken;
+//	@Autowired
+//	private InfoAdicionalToken infoAdicionalToken;
 
     private JwtAccessTokenConverter jwtAccessTokenConverter;
     private TokenStore tokenStore;

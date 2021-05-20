@@ -20,7 +20,6 @@ import javax.validation.constraints.Size;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -31,7 +30,7 @@ import lombok.experimental.Accessors;
  * @author Sr.Cekas
  */
 
-@Data
+//@Data
 @Accessors(chain = true)
 @NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
@@ -70,30 +69,30 @@ public class Role implements Serializable {
 	// Para poder eliminar un rol, el remove en una lista/ArrayList
 	// va a buscar el rol dentro de la lista y va a preguntar si es igual
 	// si es asi lo elimina, para eso el la entity Role se tiene
-	@Override
-	public boolean equals(Object obj) {
-		
-		// Pregunto si la instancia es igual al objeto que se recive por argumento.
-		if (this == obj) {
-			// Si es igual se elimina el rol.
-			return true; 
-		}
-		
-		// Puede que sea una instancia distinta pero el objeto sea el mismo
-		// por lo que se tiene que comparar con el id de cada uno.
-		// Primero valido que las dos istancias sean del mismo tipo,
-		// en caso contrario  retorno false
-		if (!(obj instanceof Role)) {
-			return false;
-		}
-		
-		// Casteo el objeto para poder compararlo.
-		Role r = (Role) obj;
-		
-		// Compruebo que el id sea distinto de nulo y que sea igual al que recive por parametro,
-		// si falla uno de los dos es false y no lo elimina.
-		return this.id != null && this.id.equals(r.getId());
-	}
+//	@Override
+//	public boolean equals(Object obj) {
+//		
+//		// Pregunto si la instancia es igual al objeto que se recive por argumento.
+//		if (this == obj) {
+//			// Si es igual se elimina el rol.
+//			return true; 
+//		}
+//		
+//		// Puede que sea una instancia distinta pero el objeto sea el mismo
+//		// por lo que se tiene que comparar con el id de cada uno.
+//		// Primero valido que las dos istancias sean del mismo tipo,
+//		// en caso contrario  retorno false
+//		if (!(obj instanceof Role)) {
+//			return false;
+//		}
+//		
+//		// Casteo el objeto para poder compararlo.
+//		Role r = (Role) obj;
+//		
+//		// Compruebo que el id sea distinto de nulo y que sea igual al que recive por parametro,
+//		// si falla uno de los dos es false y no lo elimina.
+//		return this.id != null && this.id.equals(r.getId());
+//	}
 	
 	public static long getSerialversionuid() {
 		return serialVersionUID;

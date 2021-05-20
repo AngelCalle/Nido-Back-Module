@@ -1,6 +1,5 @@
 package com.nido.infrastructure.oauth.security;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.ByteStreams;
 
@@ -17,11 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.security.web.savedrequest.Enumerator;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+
 // configura la url de acceso para realizar el login 
 /**
  * https://blog.marcosbarbero.com/centralized-authorization-jwt-spring-boot2/
@@ -61,7 +59,8 @@ public class JsonToUrlEncodedAuthenticationFilter extends OncePerRequestFilter {
         	
             byte[] json = ByteStreams.toByteArray(request.getInputStream());
 
-            Map<String, String> jsonMap = new ObjectMapper().readValue(json, Map.class);
+            @SuppressWarnings("unchecked")
+			Map<String, String> jsonMap = new ObjectMapper().readValue(json, Map.class);
             // agrego grant_type para que no sea necesario mandarlo en el body
             jsonMap.put("grant_type", "password"); 
             

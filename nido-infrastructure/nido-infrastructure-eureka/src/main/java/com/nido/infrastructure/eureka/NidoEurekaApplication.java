@@ -13,7 +13,6 @@ import lombok.extern.slf4j.Slf4j;
  * permite registrar microservicios.
  * @EnableEurekaServer Para habilitar Eureka.
  */
-//Habilita el servidor eureka
 @EnableEurekaServer
 @SpringBootApplication
 public class NidoEurekaApplication {

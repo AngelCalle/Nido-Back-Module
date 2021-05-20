@@ -9,12 +9,15 @@
 		<groupId>com.nido.infrastructure</groupId>
 		<artifactId>nido-infrastructure</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath />
 	</parent>
-	
-		<groupId>com.nido.infrastructure.eureka</groupId>
+
+	<groupId>com.nido.infrastructure.eureka</groupId>
 	<artifactId>nido-infrastructure-eureka</artifactId>
+
 	<name>nido-infrastructure-eureka</name>
-	
+	<packaging>jar</packaging>
+
 	<description>Servidor de nombres que permite registrar el resto de svc de la aplicacion</description>
 
 	<properties>
@@ -39,6 +42,7 @@
 				spring-cloud-starter-netflix-eureka-server
 			</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -49,6 +53,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>

@@ -1,17 +1,14 @@
 package com.nido.infrastructure.oauth.security;
 
 
-import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
+
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl;
 import org.springframework.security.crypto.password.PasswordEncoder;
