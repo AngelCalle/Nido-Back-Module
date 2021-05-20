@@ -1,10 +1,10 @@
 package com.nido.infrastructure.gateway.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
 /**
@@ -13,9 +13,10 @@ import reactor.core.publisher.Mono;
  * Ejecutar la lógica despues de que se envíe la solicitud de proxy.
  *
  */
-@Slf4j
 @Component
 public class AccountPostFilter {
+
+	private static final Logger log = LoggerFactory.getLogger(AccountPostFilter.class);
 
     @Bean
     public GlobalFilter postGlobalFilter() {

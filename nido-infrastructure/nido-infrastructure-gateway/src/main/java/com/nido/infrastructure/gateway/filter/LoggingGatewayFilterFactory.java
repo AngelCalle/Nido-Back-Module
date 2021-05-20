@@ -1,16 +1,19 @@
 package com.nido.infrastructure.gateway.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.stereotype.Component;
 
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
-@Slf4j
 @Component
-public class LoggingGatewayFilterFactory extends  AbstractGatewayFilterFactory<LoggingGatewayFilterFactory.Config> {
+public class LoggingGatewayFilterFactory extends 
+  AbstractGatewayFilterFactory<LoggingGatewayFilterFactory.Config> {
 	
+	private static final Logger log = LoggerFactory.getLogger(LoggingGatewayFilterFactory.class);
+
     public LoggingGatewayFilterFactory() {
         super(Config.class);
     }
@@ -75,5 +78,4 @@ public class LoggingGatewayFilterFactory extends  AbstractGatewayFilterFactory<L
     		this.postLogger = postLogger;
     	}
     }
-
 }

@@ -1,5 +1,6 @@
 package com.nido.infrastructure.eureka;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
@@ -12,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
  * permite registrar microservicios.
  * @EnableEurekaServer Para habilitar Eureka.
  */
+//Habilita el servidor eureka
 @EnableEurekaServer
 @SpringBootApplication
 public class NidoEurekaApplication {

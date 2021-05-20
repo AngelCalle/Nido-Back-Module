@@ -25,12 +25,34 @@
 	
 	<developers>
 		<developer>
+			<id>aacalle</id>
 			<name>Angel Calle</name>
 			<email>angelcalle@zoho.com</email>
-			<organization>Nido</organization>
+			<timezone>Europe/Madrid</timezone>
 			<organizationUrl>https://www.linkedin.com/in/angelcalleserrano/</organizationUrl>
+			<organization>Nido</organization>
+			<roles>
+				<role>Project Lead</role>
+			</roles>
 		</developer>
 	</developers>	
+	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+		
+	<scm>
+		<connection>scm:git:https://github.com/</connection>
+		<developerConnection>
+			scm:git:git@github.com:
+		</developerConnection>
+		<url>https://github.com/</url>
+		<tag>HEAD</tag>
+	</scm>	
 
 	<modules>
 		<module>../nido-common</module>
@@ -61,35 +83,32 @@
 	</properties>
 	
 	<prerequisites>
-		<maven>3.0.0</maven>
+		<maven>3.6.3</maven>
 	</prerequisites>
 
 	<dependencies>
 	
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>		
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-starter</artifactId>		 -->
+<!-- 		</dependency> -->
 		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-				
-			</exclusions>
-			
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-starter-test</artifactId> -->
+<!-- 			<scope>test</scope> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.junit.vintage</groupId> -->
+<!-- 					<artifactId>junit-vintage-engine</artifactId> -->
+<!-- 				</exclusion>				 -->
+<!-- 			</exclusions>			 -->
+<!-- 		</dependency> -->
 	
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
-
         </dependency>
 
 		<!-- Validada -->
@@ -144,6 +163,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
 
 </project>

@@ -41,8 +41,6 @@ CREATE TABLE IF NOT EXISTS oauth_code (
 	authentication bytea
 );
 
-
-
 CREATE TABLE IF NOT EXISTS users (
 	id SERIAL PRIMARY KEY,
 	username VARCHAR(256) NOT NULL,

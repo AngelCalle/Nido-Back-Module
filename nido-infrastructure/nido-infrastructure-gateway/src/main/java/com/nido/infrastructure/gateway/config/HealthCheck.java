@@ -1,11 +1,11 @@
 package com.nido.infrastructure.gateway.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.netflix.appinfo.HealthCheckHandler;
 import com.netflix.appinfo.InstanceInfo.InstanceStatus;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
@@ -16,9 +16,11 @@ import lombok.extern.slf4j.Slf4j;
  * y una vez retornados todos retornar siempre el estado ‘UP’.
  * 
  */
-@Slf4j
 @Component
 public class HealthCheck implements HealthCheckHandler {
+
+
+	private static final Logger log = LoggerFactory.getLogger(HealthCheck.class);
 
 	private int counter = -1;
 	

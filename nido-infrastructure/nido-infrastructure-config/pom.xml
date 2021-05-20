@@ -11,10 +11,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-		<groupId>com.nido.infrastructure.config</groupId>
+	<groupId>com.nido.infrastructure.config</groupId>
 	<artifactId>nido-infrastructure-config</artifactId>
 	<name>nido-infrastructure-config</name>
-	
+
 	<url>http://www.nido.com</url>
 	<description>Encargado de gestionar las configuraciones globales del proyecto.</description>
 
@@ -22,7 +22,11 @@
 	</properties>
 
 	<dependencies>
-		
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
@@ -46,11 +50,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency> 
+
 	</dependencies>
 
 	<dependencyManagement>

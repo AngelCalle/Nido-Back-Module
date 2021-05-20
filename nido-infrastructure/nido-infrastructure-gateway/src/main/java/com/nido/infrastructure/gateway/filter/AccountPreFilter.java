@@ -2,12 +2,12 @@ package com.nido.infrastructure.gateway.filter;
 
 import reactor.core.publisher.Mono;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
@@ -15,11 +15,12 @@ import lombok.extern.slf4j.Slf4j;
  * Ejecutar la lógica antes de que se envíe la solicitud de proxy.
  *
  */
-@Slf4j
 @Component
 public class AccountPreFilter implements GlobalFilter {
 	
-	@Override
+	private static final Logger log = LoggerFactory.getLogger(AccountPreFilter.class);
+
+    @Override
     public Mono<Void> filter(
       ServerWebExchange exchange,
       GatewayFilterChain chain) {
