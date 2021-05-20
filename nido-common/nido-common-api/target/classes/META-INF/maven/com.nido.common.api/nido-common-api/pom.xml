@@ -16,7 +16,6 @@
 	<name>nido-common-api</name>
 	<packaging>jar</packaging>
 
-	<url>http://www.nido.com</url>
 	<description>Encargado de gestionar todas las respuestas de error del API</description>
 
 

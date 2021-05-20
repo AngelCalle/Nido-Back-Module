@@ -16,7 +16,6 @@
 	<name>nido-business-mail</name>
 	<packaging>jar</packaging>
 
-	<url>http://www.nido.com</url>
 	<description>SVC encargado de las comunicaciones con los usuarios via mail</description>
 
 	<properties>

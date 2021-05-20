@@ -20,7 +20,7 @@ public class NidoEurekaApplication {
 	
     public static void main( String[] args ) {
     	SpringApplication.run(NidoEurekaApplication.class, args);
-    	log.info("Nido Eureka Server iniciado .... !!");   
+		log.info("Nido Eureka Server iniciado correctamente... !!");
     }
 
 }

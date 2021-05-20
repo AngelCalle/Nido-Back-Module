@@ -11,12 +11,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-		<groupId>com.nido.infrastructure.admin</groupId>
+	<groupId>com.nido.infrastructure.admin</groupId>
 	<artifactId>nido-infrastructure-admin</artifactId>
 	<name>nido-infrastructure-admin</name>
 	
-
-	<url>http://www.nido.com</url>
 	<description>SVC Encargado de monitorizar el resto de SVC</description>
 
 	<properties>

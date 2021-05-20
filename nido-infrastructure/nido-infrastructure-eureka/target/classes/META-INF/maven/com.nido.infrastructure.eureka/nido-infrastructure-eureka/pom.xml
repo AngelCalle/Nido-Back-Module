@@ -15,8 +15,6 @@
 	<artifactId>nido-infrastructure-eureka</artifactId>
 	<name>nido-infrastructure-eureka</name>
 	
-
-	<url>http://www.nido.com</url>
 	<description>Servidor de nombres que permite registrar el resto de svc de la aplicacion</description>
 
 	<properties>

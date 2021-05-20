@@ -24,7 +24,7 @@ public class NidoOauth  {
 	
     public static void main( String[] args ) {
     	SpringApplication.run(NidoOauth.class, args);
-    	log.info("Nido Oauth Server iniciado .... !!");
+		log.info("Nido Oauth Server iniciado correctamente... !!");
     	
 //		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12); // Strength set as 12
 //		String encodedPassword = encoder.encode("caramelo");

@@ -24,7 +24,6 @@
 
 	<packaging>pom</packaging>
 
-	<url>http://www.nido.com</url>
 	<description>Modulo de negocio del proyecto Nido</description>
 
 	<dependencies>

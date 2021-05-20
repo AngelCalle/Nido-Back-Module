@@ -11,12 +11,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-		<groupId>com.nido.infrastructure.actuator</groupId>
+	<groupId>com.nido.infrastructure.actuator</groupId>
 	<artifactId>nido-infrastructure-actuator</artifactId>
 	<name>nido-infrastructure-actuator</name>
 	
-
-	<url>http://www.nido.com</url>
 	<description>SVC Monitorear nuestra aplicación, recopilar métricas, comprender el tráfico o el estado de nuestra base de datos se vuelve trivial con esta dependencia.</description>
 
 	<properties>

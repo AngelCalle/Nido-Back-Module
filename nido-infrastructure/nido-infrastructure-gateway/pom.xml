@@ -15,8 +15,6 @@
 	<artifactId>nido-infrastructure-gateway</artifactId>
 	<name>nido-infrastructure-gateway</name>
 
-
-	<url>http://www.nido.com</url>
 	<description>Servidor de puerta de enlace, acceso centralizadon</description>
 
 	<properties>

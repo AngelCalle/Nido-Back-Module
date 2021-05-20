@@ -15,7 +15,7 @@ public class NidoGatewayApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NidoGatewayApplication.class, args);
-    	log.info("Nido Gateway Server iniciado .... !!");    	
+		log.info("Nido Gateway Server iniciado correctamente... !!");
 	}
 	
 }

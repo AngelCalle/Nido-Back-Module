@@ -16,7 +16,6 @@
 	<name>nido-business-clients</name>
 	<packaging>jar</packaging>
 
-	<url>http://www.nido.com</url>
 	<description>Modulo encargado de gestionar las aplicaciones que tienen acceso al API</description>
 
 	<properties>

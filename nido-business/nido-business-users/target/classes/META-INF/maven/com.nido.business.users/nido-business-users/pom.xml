@@ -17,7 +17,6 @@
 	
 	<packaging>jar</packaging>
 	
-	<url>http://www.nido.com</url>
 	<description>SVC encargado de la gestion de usuarios</description>
 
 	<properties>

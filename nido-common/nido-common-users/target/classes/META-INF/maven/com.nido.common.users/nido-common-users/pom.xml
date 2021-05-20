@@ -17,7 +17,6 @@
 	<artifactId>nido-common-users</artifactId>
 	<name>nido-common-users</name>
 	
-	<url>http://www.nido.com</url>
 	<description>Clase gloval de usuarios</description>
 
 	<properties>

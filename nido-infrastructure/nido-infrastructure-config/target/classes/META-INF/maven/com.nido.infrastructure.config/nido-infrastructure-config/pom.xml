@@ -15,7 +15,6 @@
 	<artifactId>nido-infrastructure-config</artifactId>
 	<name>nido-infrastructure-config</name>
 
-	<url>http://www.nido.com</url>
 	<description>Encargado de gestionar las configuraciones globales del proyecto.</description>
 
 	<properties>
