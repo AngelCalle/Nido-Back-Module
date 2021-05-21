@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
 public class ClientsDto {
 	
 	private Long id;
-	private String username;
+	private String clientname;
 	private String password;
 	private String application_name;
 	private String company;

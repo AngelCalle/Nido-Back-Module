@@ -24,10 +24,10 @@ public class RoleClient implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="role_name")
+	@Column(name = "role_name", unique = true, length = 20, nullable = false)
     private String roleName;
 
-    @Column(name="description")
+    @Column(name = "description", length = 100)
     private String description;
 
 }
