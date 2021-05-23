@@ -1,9 +1,9 @@
-package org.nido.business.clients.controllers;
+package com.nido.business.clients.controllers;
 
 import java.io.Serializable;
 
-import org.nido.business.clients.model.RoleClient;
-import org.nido.business.clients.services.IRoleClient;
+import com.nido.business.clients.model.RoleClient;
+import com.nido.business.clients.services.IRoleClient;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

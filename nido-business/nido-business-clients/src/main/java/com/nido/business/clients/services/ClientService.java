@@ -1,7 +1,7 @@
-package org.nido.business.clients.services;
+package com.nido.business.clients.services;
 
-import org.nido.business.clients.model.Client;
-import org.nido.business.clients.repository.RepositoryClients;
+import com.nido.business.clients.model.Client;
+import com.nido.business.clients.repository.RepositoryClients;
 import org.springframework.stereotype.Service;
 
 import com.nido.common.api.services.CommonService;

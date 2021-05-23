@@ -1,4 +1,4 @@
-package org.nido.business.clients.dto;
+package com.nido.business.clients.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

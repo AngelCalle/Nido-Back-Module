@@ -1,7 +1,7 @@
-package org.nido.business.clients.services;
+package com.nido.business.clients.services;
 
-import org.nido.business.clients.model.RoleClient;
-import org.nido.business.clients.repository.RepositoryRolesClients;
+import com.nido.business.clients.model.RoleClient;
+import com.nido.business.clients.repository.RepositoryRolesClients;
 import org.springframework.stereotype.Service;
 
 import com.nido.common.api.services.CommonService;

@@ -1,4 +1,4 @@
-package org.nido.business.clients.model;
+package com.nido.business.clients.model;
 
 import java.io.Serializable;
 

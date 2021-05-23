@@ -1,9 +1,9 @@
-package org.nido.business.clients.controllers;
+package com.nido.business.clients.controllers;
 
 import java.io.Serializable;
 
-import org.nido.business.clients.model.Client;
-import org.nido.business.clients.services.IClient;
+import com.nido.business.clients.model.Client;
+import com.nido.business.clients.services.IClient;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package org.nido.business.clients.mapper;
+package com.nido.business.clients.mapper;
 
 import org.springframework.stereotype.Component;
 

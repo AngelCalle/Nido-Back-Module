@@ -1,6 +1,6 @@
-package org.nido.business.clients.services;
+package com.nido.business.clients.services;
 
-import org.nido.business.clients.model.RoleClient;
+import com.nido.business.clients.model.RoleClient;
 
 import com.nido.common.api.services.ICommon;
 

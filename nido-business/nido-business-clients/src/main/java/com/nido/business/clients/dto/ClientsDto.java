@@ -1,8 +1,8 @@
-package org.nido.business.clients.dto;
+package com.nido.business.clients.dto;
 
 import java.util.List;
 
-import org.nido.business.clients.model.RoleClient;
+import com.nido.business.clients.model.RoleClient;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
