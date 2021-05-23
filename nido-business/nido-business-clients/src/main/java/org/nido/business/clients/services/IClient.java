@@ -1,5 +1,9 @@
 package org.nido.business.clients.services;
 
-public interface IClient {
+import org.nido.business.clients.model.Client;
+
+import com.nido.common.api.services.ICommon;
+
+public interface IClient extends ICommon<Client> {
 
 }

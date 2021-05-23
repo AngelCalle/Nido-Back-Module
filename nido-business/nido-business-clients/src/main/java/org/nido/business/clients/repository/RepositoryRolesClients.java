@@ -1,5 +1,8 @@
 package org.nido.business.clients.repository;
 
-public class RepositoryRolesClients {
+import org.nido.business.clients.model.RoleClient;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
+public interface RepositoryRolesClients extends PagingAndSortingRepository<RoleClient, Long> {
+	
 }

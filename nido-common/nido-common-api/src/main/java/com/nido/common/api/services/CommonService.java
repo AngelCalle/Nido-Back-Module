@@ -5,9 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-// import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -22,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
  *            Implementa la interfaz genérica CommonService que indica los
  *            posibles métodos.
  */
-@Service
+//@Service
 //Como parámetros lleva el tipo de dato que va a gestionar -Usuario- y el tipo de clave primaria, en nuestro caso Long.
 public class CommonService<E, R extends PagingAndSortingRepository<E, Long>> implements ICommon<E> {
 

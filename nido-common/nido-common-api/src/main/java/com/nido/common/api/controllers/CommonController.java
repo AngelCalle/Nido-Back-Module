@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.nido.common.api.exception.ResourceNotFoundException;
 import com.nido.common.api.services.ICommon;
@@ -48,7 +47,6 @@ import lombok.extern.slf4j.Slf4j;
 // @CrossOrigin({"http://localhost:4200"})
 @Slf4j
 @Validated
-@RestController
 @RequestMapping()
 public class CommonController<E, S extends ICommon<E>> {
 
@@ -58,7 +56,7 @@ public class CommonController<E, S extends ICommon<E>> {
 	protected S service;
 
 	// Listar todos.
-	@GetMapping("/")
+	@GetMapping
 	// ? Tipo genérico. Para poder guardar en el tipo de la respuesta cualquier
 	// cosa.
 	public ResponseEntity<ApiResponse<Iterable<E>>> findAll() {
@@ -123,7 +121,7 @@ public class CommonController<E, S extends ICommon<E>> {
 	}
 
 	// Crear.
-	@PostMapping("/")
+	@PostMapping
 	// @RequestBody Para obtener la variable del body que llega en la llamada.
 	// @Valid Habilita la validación.
 	// BindingResult result A través del resultado obtengo los mensajes de error.

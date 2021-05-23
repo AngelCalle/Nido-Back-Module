@@ -1,7 +1,6 @@
 package org.nido.business.clients.model;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
@@ -49,12 +48,14 @@ public class Client implements Serializable {
 	@Column(name = "company", length = 100)
 	private String company;
 
-	@OneToMany(fetch = FetchType.EAGER)
+//	ManyToMany
+	@OneToOne(fetch = FetchType.EAGER)
 	@JoinTable(
 			name = "client_role",
 			joinColumns = @JoinColumn(name = "client_id", referencedColumnName = "id"),
 			inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"),
 			uniqueConstraints = @UniqueConstraint(columnNames = {"client_id","role_id"}))
-	private List<RoleClient> roles;
+//	private List<RoleClient> roles;
+	private RoleClient roles;
 
 }
