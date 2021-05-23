@@ -1,1 +1,62 @@
 /.metadata/
+.metadata/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Maven 
+target/
+
+### BUSINESS ###
+nido-business/nido-business-clients/target/
+nido-business/nido-business-clients/.settings/
+nido-business/nido-business-clients/.classpath
+
+nido-business/nido-business-mail/target/
+nido-business/nido-business-mail/.settings/
+nido-business/nido-business-mail/.classpath
+
+nido-business/nido-business-users/target/
+nido-business/nido-business-users/.settings/
+nido-business/nido-business-users/.classpath
+
+### COMMON ###
+nido-common/nido-common-api/target/
+nido-common/nido-common-api/.settings/
+nido-common/nido-common-api/.classpath
+
+nido-common/nido-common-users/target/
+nido-common/nido-common-users/.settings/
+nido-common/nido-common-users/.classpath
+
+### INFRASTRUCTURE ###
+nido-infrastructure/nido-infrastructure-actuator/target/
+nido-infrastructure/nido-infrastructure-actuator/.settings/
+nido-infrastructure/nido-infrastructure-actuator/.classpath
+
+nido-infrastructure/nido-infrastructure-admin/target/
+nido-infrastructure/nido-infrastructure-admin/.settings/
+nido-infrastructure/nido-infrastructure-admin/.classpath
+
+nido-infrastructure/nido-infrastructure-config/target/
+nido-infrastructure/nido-infrastructure-config/.settings/
+nido-infrastructure/nido-infrastructure-config/.classpath
+
+nido-infrastructure/nido-infrastructure-eureka/target/
+nido-infrastructure/nido-infrastructure-eureka/.settings/
+nido-infrastructure/nido-infrastructure-eureka/.classpath
+
+nido-infrastructure/nido-infrastructure-gateway/target/
+nido-infrastructure/nido-infrastructure-gateway/.settings/
+nido-infrastructure/nido-infrastructure-gateway/.classpath
+
+nido-infrastructure/nido-infrastructure-oauth/target/
+nido-infrastructure/nido-infrastructure-oauth/.settings/
+nido-infrastructure/nido-infrastructure-oauth/.classpath
+
+nido-infrastructure/nido-infrastructure-recaptcha/target/
+nido-infrastructure/nido-infrastructure-recaptcha/.settings/
+nido-infrastructure/nido-infrastructure-recaptcha/.classpath
+

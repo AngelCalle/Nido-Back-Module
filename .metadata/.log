@@ -12174,3 +12174,15 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-23 19:21:38.140
 !MESSAGE executing callback sts4.classpath.PanXQrKl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-23 19:23:48.471
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PanXQrKl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-23 19:23:48.472
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.PanXQrKl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-23 19:23:48.472
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-23 19:23:48.472
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PanXQrKl => OK
