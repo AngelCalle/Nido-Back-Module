@@ -10,6 +10,7 @@
 target/
 
 ### BUSINESS ###
+nido-business/.settings/
 nido-business/nido-business-clients/target/
 nido-business/nido-business-clients/.settings/
 nido-business/nido-business-clients/.classpath
@@ -23,6 +24,7 @@ nido-business/nido-business-users/.settings/
 nido-business/nido-business-users/.classpath
 
 ### COMMON ###
+nido-common/.settings/
 nido-common/nido-common-api/target/
 nido-common/nido-common-api/.settings/
 nido-common/nido-common-api/.classpath
@@ -32,6 +34,7 @@ nido-common/nido-common-users/.settings/
 nido-common/nido-common-users/.classpath
 
 ### INFRASTRUCTURE ###
+nido-infrastructure/.settings/
 nido-infrastructure/nido-infrastructure-actuator/target/
 nido-infrastructure/nido-infrastructure-actuator/.settings/
 nido-infrastructure/nido-infrastructure-actuator/.classpath
